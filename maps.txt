@@ -49,7 +49,7 @@ endmap
 
 map kilostation
 	votable
-	maxplayers 25
+	maxplayers 32
 	webmap_url https://webmap.affectedarc07.co.uk/maps/tgstation/kilostation/
 endmap
 
