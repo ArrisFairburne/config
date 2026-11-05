@@ -66,6 +66,7 @@ map blueshift
 	minplayers 45
 #	votable
 	feedbacklink https://discord.com/channels/1059199070016655462/1376747654339624970
+	webmap_url https://webmap.affectedarc07.co.uk/maps/bubber/blueshift/
 endmap
 
 map boxstation
