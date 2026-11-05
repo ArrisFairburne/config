@@ -38,9 +38,9 @@ map metastation
 endmap
 
 map tramstation
+    minplayers 25
 	votable
 	webmap_url https://webmap.affectedarc07.co.uk/maps/tgstation/tramstation/
-    minplayers 20
 endmap
 
 map nebulastation
