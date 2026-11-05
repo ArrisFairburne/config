@@ -1,6 +1,25 @@
+This file contains a list of maps for use in map rotation.
+#Lines starting with # are ignored.
+Lines not inside map blocks are also ignored
+Duplicated entries use the latter one.
+All whitespace at the start and end of lines is ignored. (including indentation, thats just for show)
+Format:
+#map [map name] (name of .json file in _maps folder without the .json part)
+	minplayers [number] (0 or less disables this requirement)
+	maxplayers [number] (0 or less disables this requirement)
+	default (The last map with this defined will get all votes of players who have not explicitly voted for a map)
+	voteweight [number] (How much to count each player vote as, defaults to 1, setting to 0.5 counts each vote as half a vote, 2 as double, etc, Setting to 0 disables the map but allows players to still pick it)
+	disabled (disables the map)
+	votable (is this map votable)
+	feedbacklink (link in-game shown to players to leave feedback for the map)
+	webmap_url (link to the a webmap to see the map in the user's browser)
+endmap
+
+# Production-level maps.
+
 map deltastation
+	minplayers 45
 	votable
-    minplayers 15
 	webmap_url https://webmap.affectedarc07.co.uk/maps/tgstation/deltastation/
 endmap
 
@@ -8,13 +27,16 @@ map icebox
 	votable
 	webmap_url https://webmap.affectedarc07.co.uk/maps/tgstation/icebox/
 endmap
+
 map catwalkstation
 #	votable
 endmap
+
 map metastation
 	votable
 	webmap_url https://webmap.affectedarc07.co.uk/maps/tgstation/metastation/
 endmap
+
 map tramstation
 	votable
 	webmap_url https://webmap.affectedarc07.co.uk/maps/tgstation/tramstation/
@@ -22,50 +44,66 @@ map tramstation
 endmap
 
 map nebulastation
-	votable
+#	votable
 endmap
 
 map kilostation
 	votable
 	maxplayers 25
+	webmap_url https://webmap.affectedarc07.co.uk/maps/tgstation/kilostation/
 endmap
 
 # Bubberstation maps.
 
 map biodome
+    minplayers 37
 	votable
+	feedbacklink https://discord.com/channels/1059199070016655462/1460406585401544867
 	webmap_url https://webmap.affectedarc07.co.uk/maps/bubber/biodome/
-    minplayers 20
 endmap
 
 map blueshift
-	votable
+#	votable
 	webmap_url https://webmap.affectedarc07.co.uk/maps/bubber/blueshift/
     minplayers 40
 endmap
 
 map boxstation
 	votable
+	feedbacklink https://discord.com/channels/1059199070016655462/1410026686749085757
 	webmap_url https://webmap.affectedarc07.co.uk/maps/bubber/boxstation/
 endmap
-map PubbyStation
-	votable
-	webmap_url https://webmap.affectedarc07.co.uk/maps/fulp/pubbystation/
-endmap
+
 map moonstation
+	minplayers 37
 	votable
 	webmap_url https://webmap.affectedarc07.co.uk/maps/bubber/moonstation/
-    minplayers 20
 endmap
 
 map voidraptor
 	votable
 	webmap_url https://webmap.affectedarc07.co.uk/maps/bubber/voidraptor/
 endmap
+
+map rimpoint
+	minplayers 37
+	webmap_url https://webmap.affectedarc07.co.uk/maps/effigy/rimpoint/
+endmap
+
+map sigma_octantis
+	minplayers 37
+	webmap_url https://webmap.affectedarc07.co.uk/maps/effigy/sigmaoctantis/
+endmap
+
+map ouroboros
+#	votable
+endmap
+
 map northstar
-	votable
+#	votable
+	minplayers 37
+	feedbacklink https://discord.com/channels/1059199070016655462/1503912764148551871
 	webmap_url https://webmap.affectedarc07.co.uk/maps/tgstation/northstar/
-    minplayers 25
 endmap
 
 map pubbystation
